@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TaskMaster - Minhas Tarefas</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>📝 TaskMaster</h1>
+      <p class="subtitle">Minha Lista de Tarefas</p>
+    </header>
+
+    <div class="input-group">
+      <input 
+        type="text" 
+        id="taskInput" 
+        placeholder="Digite uma nova tarefa..."
+        autocomplete="off"
+      >
+      <button id="addBtn" title="Adicionar tarefa">+</button>
+    </div>
+
+    <div class="stats">
+      <span id="totalTasks">0 tarefas</span>
+      <span id="completedTasks">0 concluídas</span>
+    </div>
+
+    <ul id="taskList"></ul>
+
+    <div class="empty-state" id="emptyState">
+      <span class="empty-icon">📭</span>
+      <p>Nenhuma tarefa ainda.</p>
+      <p class="empty-hint">Adicione sua primeira tarefa acima!</p>
+    </div>
+
+    <footer>
+      <p>Dica: Clique no texto para marcar como concluído</p>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
